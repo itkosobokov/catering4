@@ -34,8 +34,16 @@ function onOperationButtonClick(eventObject) {
     var operation = clickedElement.innerHTML;
     makeOperation(operation);
 }
+var arrayOfButtons = [buttonPlus, buttonMinus, buttonMultyply, buttonDevide];
 
-buttonPlus.addEventListener('click', onOperationButtonClick);
+for (var index = 0; index < arrayOfButtons.length; index++) {
+    //const element = array[index];
+    var button = arrayOfButtons[index];
+    button.addEventListener('click', onOperationButtonClick);    
+}
+
+/*buttonPlus.addEventListener('click', onOperationButtonClick);
 buttonMinus.addEventListener('click', onOperationButtonClick);
 buttonMultyply.addEventListener('click', onOperationButtonClick);
 buttonDevide.addEventListener('click', onOperationButtonClick);
+*/
