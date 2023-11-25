@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Catering</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+	<header>Кейтеринг в Москве</header>
+	<div class="clockclass">
+		<div class="numbers">
+			<span style="--i:0;"><b>12</b></span>
+			<span style="--i:1;"><b>3</b></span>
+			<span style="--i:2;"><b>6</b></span>
+			<span style="--i:3;"><b>9</b></span>
+			<div class="circle" id="hr"><i></i></div>
+			<div class="circle" id="mn"><i></i></div>
+			<div class="circle" id="sc"><i></i></div>
+
+		</div>
+	</div>
+
+	<hr>
+	<h1>
+		Форматы мероприятий на любой вкус, цвет и кошелек.
+		</h2>
+		<hr>
+		<h1>
+			Телефон: +7-495-999-99-99<br>
+			Почта: test_email@mail.ru
+
+		</h1>
+		<hr>
+		<h2>Пикап</h2>
+		<ul>
+			<li>Обоссаться</li>
+			<li>Напиться</li>
+			<li>Снова обоссаться</li>
+			<li>Обблеваться</li>
+			<li>Обкуриться</li>
+			<li>Обосраться</li>
+			<li>Выебонить</li>
+		</ul>
+		<hr>
+		<input value="First Name" id="fname" class="input-green" /> <br>
+		<input value="Second Name" id="sname" class="input-green" /> <br>
+
+		<select id="cities">
+			<option>Moscow</option>
+			<option selected='selected'>Minks</option> <br>
+			<option>Kiev</option>
+		</select>
+		<br>
+
+		<button id="send-buttun">Send</button>
+		<p id="demo"></p>
+		<script>
+			let element = document.getElementById("send-buttun");
+			element.addEventListener("click", myFunction1);
+
+			function myFunction1() {
+				console.log("ХУЙТЫ ПОРШИВЫЙ")
+			}
+
+
+		</script>
+
+		<br>
+		<hr>
+		<textarea name="" id="hobbies" cols="30" rows="10">My Hobby</textarea>
+		<img src="images\index\furshet_img-1.jpg" alt="Накрытый стол">
+		<hr>
+		<div id="avatar-wrapper">
+			<img id="avatarka" src="https://sun9-7.userapi.com/c841333/v841333884/4353/iuH6hp-wVDY.jpg" alt="аватар"
+				srcset="">
+		</div>
+		<hr>
+
+		<script src="js/script.js"></script>
+
+
+
+		<script src="js/clock.js"></script>
+		<script src="js/listeners.js"></script>
+
+
+</body>
+
+
+</html>

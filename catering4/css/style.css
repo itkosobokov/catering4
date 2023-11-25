@@ -1,0 +1,237 @@
+/*
+	Comment
+*/
+
+a { /* Comment */ color: /* Comment */ Red; }
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:weight@300;400;500;600;700;800;900&display=swap");
+
+/*header {
+	color: grey;
+	text-align: center;
+	font-size: 60px;
+	
+	
+}
+*/
+header {
+	font-family: "Brush Script MT", "Brush Script Std", cursive;
+	text-align:center;
+	font-size: 60px;
+	display: block;
+	text-shadow: 1px 0 10px pink;
+	color: steelblue;
+	transition: all 1s;
+  }
+  
+  header:after {
+	
+	content: "";
+	display: block;
+	position: relative;
+	z-index: -1;
+	width: 100%;
+	margin: auto;
+	border-bottom: 3px solid steelblue;
+	bottom: .15em;
+	transition: all 1s;
+  }
+  
+  header:hover:after {
+	
+	width: 0%;
+	border-bottom-width: 1px;
+  }
+ body {	
+background: #acbaca;;  
+
+ }
+
+ hr {
+	border:none;
+	height: 20px;
+	   width: 90%;
+	  height: 50px;
+	  margin-top: 0;
+	  border-bottom: 1px solid steelblue;
+	  box-shadow: 0 20px 20px -20px steelblue;
+	margin: -50px auto 10px; 
+  }
+	
+
+h1 {
+	color: steelblue;
+	text-align: left;
+	font-size: 30px;
+	text-shadow: 1px 0 10px pink;
+	text-align: center;
+}
+h2 {
+	color: steelblue;
+	text-align: left;
+	font-size: 25px;
+	text-shadow: 1px 0 10px pink;
+}
+
+h3 {
+	font-size: 20px;
+	margin: 0;
+	color: steelblue;
+	font-family: "Montez";
+
+	letter-spacing: 3px;
+	text-align: left;
+ }
+ h3 a {
+	color: #c2a77a;
+ }
+
+ ul {
+	color: steelblue;
+	text-shadow: 1px 0 10px pink;
+
+ }
+
+img {
+	border-radius: 100%;
+	width: 100%;
+	height:450px;
+	
+}
+
+.input-green {
+	border: green 3px solid;
+	padding: 5px;
+}
+
+.input-red {
+	border: red 3px solid;
+	padding: 5px;
+}
+
+.clockclass {
+	position:relative;
+	width: 300px;
+	height: 300px;
+	background: #c9d5e0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	border-radius: 999px;
+	box-shadow: 30px 30px 30px -10px rgba(0, 0, 0, 0.15),
+	  inset 15px 15px 10px rgba(255, 255, 255, 0.75),
+	  -15px -15px 35px rgba(255, 255, 255, 0.55),
+	  inset -1px -1px 10px rgba(0, 0, 0, 0.2);
+  }
+  .clockclass::before {
+	content: "";
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	background: #e91e63;
+	border-radius: 50%;
+	z-index: 1000;
+	box-shadow: 0 0 0 1px #e91e63, 0 0 0 3px #fff, 0 0 5px 5px rgba(0, 0, 0, 0.15);
+  }
+  .clockclass .numbers {
+	position: absolute;
+	inset: 35px;
+	background: #152b4a;
+	border-radius: 50%;
+	box-shadow: 4px 4px 15px #152b4a66,
+	  inset 5px 5px 5px rgba(255, 255, 255, 0.55),
+	  -6px -6px 10px rgba(255, 255, 255, 1);
+  }
+  .clockclass .numbers span {
+	position: absolute;
+	inset: 5px;
+	text-align: center;
+	color: #fff;
+	font-size: 1.25em;
+	transform: rotate(calc(90deg * var(--i)));
+  }
+  
+  .clockclass .numbers span b {
+	font-weight: 600;
+	display: inline-block;
+	transform: rotate(calc(-90deg * var(--i)));
+  }
+  
+  .clockclass .numbers::before {
+	content: "";
+	position: absolute;
+	inset: 35px;
+	background: linear-gradient(#2196f3, #e91e63);
+	border-radius: 50%;
+	animation: animate 2s linear infinite;
+  }
+  @keyframes animate {
+	0% {
+	  transform: rotate(360deg);
+	}
+	100% {
+	  transform: rotate(0deg);
+	}
+  }
+  .clockclass .numbers::after {
+	content: "";
+	position: absolute;
+	inset: 38px;
+	background: #152b4a;
+	border-radius: 50%;
+  }
+  
+  .clockclass .numbers .circle {
+	position: absolute;
+	inset: 0;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+  }
+  
+  .clockclass .numbers .circle i {
+	position: absolute;
+	width: 3px;
+	height: 50%;
+	background: #fff;
+	transform-origin: bottom;
+  }
+  
+  .clockclass .numbers .circle#hr i {
+	transform: scale(0.3);
+	width: 5px;
+  }
+  .clockclass .numbers .circle#mn i {
+	transform: scale(0.45);
+  }
+  .clockclass .numbers .circle#sc i {
+	transform: scale(0.55);
+	width: 2px;
+	background: #e91e63;
+	box-shadow: 0 30px 0 #e91e63;
+  }
+
+  .jsmy-calculator {
+	width: 500px;
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	border: black 1px solid;
+	
+  }
+  .jsmy-calculator .operations-block button {
+	width: 40px;
+	height: 40px;
+	margin: 20px;
+  }
+  
+  .jsmy-calculator .inputs-block .input-block {
+	display: inline-block;
+	padding: 10px;
+  }
+  .jsmy-calculator .inputs-block .input-block label {
+	display: block;
+  }
+  
