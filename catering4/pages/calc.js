@@ -1,7 +1,9 @@
-var buttonPlus = document.getElementById("buttonPlus");
+/*var buttonPlus = document.getElementById("buttonPlus");
 var buttonMinus = document.getElementById("buttonMinus");
 var buttonMultyply = document.getElementById("buttonMultyply");
 var buttonDevide = document.getElementById("buttonDevide");
+*/
+var operationButtons = document.getElementsByClassName("operation-button");
 
 var input1 = document.getElementById("number1");
 var input2 = document.getElementById("number2");
